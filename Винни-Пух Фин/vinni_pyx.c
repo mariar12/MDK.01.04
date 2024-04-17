@@ -37,8 +37,8 @@ int main() {
     int room_c = 0;
     int entry_c = 0;
 
-    while (fscanf(num_file, "%d;%d;%s", &rooms[room_c].id, &rooms[room_c].room_number, rooms[room_count].category) == 3) {
-        room_count++;
+    while (fscanf(num_file, "%d;%d;%s", &rooms[room_c].id, &rooms[room_c].room_num, rooms[room_c].category) == 3) {
+        room_c++;
     }
 
     while (fscanf(name_file, "%d;%10s;%49s", &entries[entry_c].id, entries[entry_c].date, entries[entry_c].surname) == 3) {
